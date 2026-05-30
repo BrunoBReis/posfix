@@ -1,0 +1,15 @@
+# golangci-lint v2 configuration.  Run locally with: golangci-lint run ./...
+version: "2"
+
+linters:
+  # The standard set: errcheck, govet, ineffassign, staticcheck, unused.
+  default: standard
+  settings:
+    errcheck:
+      # Writes to the program's stdout/stderr cannot fail in any actionable way
+      # (there is nowhere to report a failed write to stderr), so the errors
+      # returned by the fmt.Fprint* family are intentionally not checked.
+      exclude-functions:
+        - fmt.Fprint
+        - fmt.Fprintf
+        - fmt.Fprintln
