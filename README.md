@@ -1,5 +1,7 @@
 # posfix
 
+[![CI](https://github.com/BrunoBReis/posfix/actions/workflows/ci.yml/badge.svg)](https://github.com/BrunoBReis/posfix/actions/workflows/ci.yml)
+
 > A small, Unix-philosophy CLI that normalizes filenames to `snake_case` ASCII.
 
 `posfix` — a pun on **POSIX** — does one thing well: it renames files so their names
@@ -29,7 +31,7 @@ go install github.com/brunobreis/posfix/cmd/posfix@latest
 ```
 
 This puts the `posfix` binary in your `$GOBIN` (usually `~/go/bin`; make sure it's on
-your `PATH`). An AUR package is planned — see the roadmap.
+your `PATH`). Requires Go 1.25 or newer. An AUR package is planned — see the roadmap.
 
 ## Usage
 
