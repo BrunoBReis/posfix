@@ -1,0 +1,22 @@
+# Compiled binary (built at repo root, e.g. `go build ./cmd/posfix`)
+/posfix
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries and coverage output
+*.test
+*.out
+coverage.*
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Environment / editor / OS noise
+.env
+.idea/
+.vscode/
+.DS_Store
